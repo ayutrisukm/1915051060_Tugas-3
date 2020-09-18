@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sistem Informasi Data Pegawai</title>
+    <link rel="stylesheet" type="text/css" href="1915051060_Tugas-3.css">
+</head>
+<body>
+    <div class="container">
+    <header class="header">
+    <div class="logo">
+        <img src="https://i.ibb.co/3dw6LwG/logo-undiksha.png" width="100">
+</div>
+<nav class="nav">
+    <h1>Selamat Datang Di Sistem Data Pegawai</h1>
+    <ul> 
+        <li><a href="#logout">Logout</a></li>
+    </ul>
+</nav>
+</header>
+<div class="wrapper">
+    <aside class="sidebar">
+        <div style="padding: 10px;">
+            <b>Menu</b><br>
+            <hr>
+                <a href="#www.biodatapegawai.com/Home">Home</a><br/>
+                <a href="#D:\SEMESTER 3\PEMWEB\Tugas 2 form\1915051060_IGA Komang Tri Sukma L.D_PTI 3D_TUGAS 2 PEMWEB.html">Biodata</a><br />
+                <a href="#www.biodatapegawai.com/Updatebiodata">Update Biodata</a><br />
+                <a href="#www.biodatapegawai.com/Contact">Contact</a><br />
+    </div>
+</aside>
+<main class="content">
+    <div style="padding: 10px;">
+        <h3 style="margin: 0px;">Update Biodata Karyawan</h3>
+        <hr/>
+    <form action=" formulir.php" method="post" onSubmit="return ValidasiForm()" name="FormReg">
+        <table>
+            <tr>
+            <! --Untuk Kolom Nama-->
+            <td>Nama</td>
+                <td>:</td>
+                    <td><input type="text" name="Nama" value="" placeholder="Tulisakan Nama Anda"/></td>
+            </tr>
+            <tr>
+            <! --Untuk Kolom Password-->
+            <td>Password</td>
+                <td>:</td>
+                    <td> <input type="password" name="Passw" placeholder="Tulisakan Password Anda" /></td>
+            </tr>
+            <tr>
+            <! --Untuk Jenis Kolom Kelamin-->
+            <td>Jenis Kelamin</td>
+            <td>:</td>
+                <td>
+                <input type="radio" name="jenis_kel" value="Laki-laki" /> Laki - Laki
+                <input type="radio" name="jenis_kel" value="Perempuan" /> Perempuan
+            </td>
+            </tr>
+            <tr>
+            <! --Untuk Kolom Hobi-->
+            <td>Hobi</td>
+                <td>:</td>
+                <td><input type="checkbox" name="baca" /> Membaca Buku
+                    <input type="checkbox" name="nulis" /> Menulis
+                    <input type="checkbox" name="lainnya" />
+                <td><input type="text" name="Hobi Lainnya" value="" placeholder="Lainnya" /></td>
+            </td>
+            </tr>
+            <tr>
+            <! --Untuk Kolom Kota Asal-->
+            <td>Kota Asal</td>
+            <td>:</td>
+                <td>
+                <select name="">
+                    <option value="Bali">Singaraja</option>
+                    <option>Tabanan</option>
+                    <option value="Denpasar">Badung</option>
+                </select>
+                </td>
+            </tr>
+            <tr>
+            <! --Untuk Kolom Komentar-->
+                <td>Komentar</td>
+                <td>:</td>
+                <td><textarea name="komentar" rows="5" cols="20"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="3" align="right"><input type="submit" value="Simpan"></td>
+            </tr>
+        </table>
+    </form>
+</div>
+</main>
+</div>
+<footer class="footer">
+<font color="white">Copyright UNIVERSITAS PENDIDIKAN GANESHA </font>
+</footer>
+</div>
+</body>
+</html>
